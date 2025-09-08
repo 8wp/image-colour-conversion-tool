@@ -51,10 +51,11 @@ def main():
         out_name = f"converted_{os.path.splitext(image_name)[0]}.png"
         print(f"No filename entered, using default: {out_name}")
     elif not out_name.lower().endswith('.png'):
-        out_name += '.png'  # Add .png if missing
+        out_name += '.png'
 
     result.save(out_name)
     print(f"✅ Saved: {out_name}")
 
 if __name__ == "__main__":
     main()
+
